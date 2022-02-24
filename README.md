@@ -15,10 +15,11 @@ HTML再度変更してもOK
 ## section3
 レスポンシブ 対応
 スマートフォンで見たときにスマートフォン用のデザインになるようにしてください。
-
-
 ## section4
-サーバーにWordPressをインストール
+javascript
 
 ## section5
+サーバーにWordPressをインストール
+
+## section6
 作成したサイトをWordPressのテーマにする
