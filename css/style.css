@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 基本設定
+****************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+iframe {
+  vertical-align: middle;
+}
+
+/* CLEAR-FIX */
+/*.clearfix {
+  zoom: 1;
+}*/
+
+/*.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+*/
+
+
+/* 共通
+****************************************/
+.background {
+  background-color: #F8F9FA;
+}
+
+.flex {
+  display: flex
+}
+
+.sec__ttl {
+  font-size: 64px;
+  text-align: center;
+  color: #B6E2A2;
+  margin: 132px auto 70px;
+
+
+}
+
+.link a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  border: 1px solid #ccc;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+
+
+/* header
+****************************************/
+.header__nav_toggle {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 39px;
+  top: 32px;
+}
+
+.header__nav_toggle i {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #555;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
+}
+
+.header__nav_toggle i:nth-child(1) {
+  top: 0;
+}
+
+.header__nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header__nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+.header__nav_toggle.show i:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.header__nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+
+.header__nav_toggle.show i:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+.header__nav {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+}
+
+.header__nav.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* mv
+****************************************/
+
+
+
+/* about
+****************************************/
+
+.about {
+  max-width: 1148px;
+  margin: 0 auto;
+  padding-top: 147px;
+}
+
+.about__container {
+  justify-content: space-between;
+
+}
+
+.about__cont {
+  max-width: 469px;
+  text-align: center;
+
+}
+
+.about__cont_lead {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 50px 0 20px;
+  letter-spacing: 0.1em;
+}
+
+.about__cont_txt {
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+
+}
+
+.about__cont_link {
+  max-width: 165px;
+  margin: 0 auto;
+}
+
+
+/* menu
+****************************************/
+.menu__container {
+  margin-bottom: 100px;
+}
+
+.menu__cont_link {
+  max-width: 235px;
+  margin: 0 auto;
+}
+
+
+/* contact
+****************************************/
+
+.contact {
+  margin-top: 144px;
+}
+
+.menu__cont {
+  box-shadow: 0px 3px 6px #000;
+}
+
+.menu__cont p {
+  letter-spacing: 0.1em;
+  padding-top: 10px;
+}
+
+.contact__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.contact__cont {
+  text-align: center;
+  padding-left: 70px;
+}
+
+.contact__cont_lead {
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  margin: 40px auto 20px;
+}
+
+.contact__cont p {
+  letter-spacing: 0.1em
+}
+
+.contact__cont_link {
+  margin-top: 30px;
+}
+
+
+/* blog
+****************************************/
+.blog__container {
+  max-width: 1040px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.blog__cont_date {
+  line-height: 2.5em;
+  letter-spacing: 0.2em;
+  background-color: #B6E2A2;
+  color: #fff;
+  text-align: center;
+}
+
+.blog__cont_ttl {
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
+
+/* map
+****************************************/
+.map__container {
+  text-align: center;
+  padding-bottom: 145px;
+}
+
+/* footer
+****************************************/
+
+.footer {
+  max-width: 1300px;
+  margin: 80px auto;
+}
+
+.footer__container {
+  justify-content: space-between;
+}
+
+.footer__cont_lead {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.footer__cont_shop {
+  font-size: 32px;
+  letter-spacing: 0.1em;
+}
+
+.footer__cont_nav li {
+  margin-left: 30px;
+  letter-spacing: 0.1em;
+}
+
+.footer_small {
+  font-size: 11px;
+  text-align: end;
+  margin-top: 60px;
+}
