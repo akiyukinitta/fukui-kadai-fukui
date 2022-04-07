@@ -9,49 +9,55 @@
   <meta name="description" content="美容サロン">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2？family = Noto + Sans + JP& display = swap " rel=" stylesheet ">
-  <!--<style>
-</style>-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css2？family = Noto + Serif + JP& display = swap " rel=" stylesheet ">
+
+   <!--Font Awesome 6-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 
 </head>
 
 <body>
-  <header class="header">
-    <span class="header__nav_toggle">
-      <i></i>
-      <i></i>
-      <i></i>
-    </span>
+  <header class="header" id="head">
+    <div class="header__navbtn">
+      <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
 
     <nav class="header__nav">
-      <ul class="header__nav_ul">
-        <li>Top</li>
-        <li>About</li>
-        <li>Menu</li>
-        <li>Contact</li>
-        <li>Blog</li>
+      <p class="header__nav_ttl">Beautiful Days</p>
+      <ul>
+        <li><a href="">Top</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="mv">
-    <div class="mv__img"><img src="image/mv.jpg" alt="白金台にある癒しのエステサロン Beautiful Days"></div>
+    <p class="mv__subttl">白金台にある<br class="pc_hidden">癒しのエステサロン</p>
+    <h1 class="mv__ttl">Beautiful Days</h1>
+    <div class="mv__icon"><a href="#head"><i class="fa-solid fa-angle-up fa-3x"></i></a></div>
   </div>
 
 
   <main class="background">
 
-    <section class="about">
+    <section class="about inner" id="about">
       <div class="about__container flex">
         <div class="abou__cont_img"><img src="image/image1.jpg" alt="白金台にある癒しのプライベート空間">
         </div>
         <div class="about__cont">
-          <h2 class="about__cont_lead">白金台にある癒しのプライベート空間</h2>
+          <h2 class="about__cont_lead">白金台にある<br class="pc_hidden">癒しのプライベート空間</h2>
           <p class="about__cont_txt">エステサロンビューティフルデイズは、<br>
             がんばるあなたがちょっと疲れた時に<br>
             立ち寄れるほっとする時間をつくります。</p>
@@ -61,9 +67,9 @@
     </section>
 
 
-    <section class="menu">
-      <h1 class="sec__ttl">Menu</h1>
-      <div class="menu__container flex">
+    <section class="menu" id="menu">
+      <h2 class="sec__ttl">Menu</h2>
+      <div class="menu__container slider">
         <div class="menu__cont">
           <div class="menu__cont_img"><img src="image/handfoot.jpg" alt="ハンドケア &#047; フットケア"></div>
           <p>ハンドケア &#047; フットケア</p>
@@ -94,7 +100,7 @@
     </section>
 
 
-    <section class="contact">
+    <section class="contact inner" id="contact">
       <div class="contact__container flex">
         <div class="contact__cont">
           <h2 class="contact__cont_lead">ご予約方法</h2>
@@ -102,12 +108,12 @@
           <p>&#040;営業時間&#058;10&#058;00&#045;20&#058;00&#041;</p>
           <div class="contact__cont_link link"><a href="">お問い合わせ</a></div>
         </div>
-        <div class="contact__cont_img"><img src="image/reservation.jpg" alt="ご予約方法"></div>
+        <div class="contact__cont_img"><img src="image/reservation.jpg" alt="ご予約方法" width="800px"></div>
       </div>
     </section>
 
-    <section class="blog">
-      <h1 class="sec__ttl">Blog</h1>
+    <section class="blog inner" id="blog">
+      <h2 class="sec__ttl">Blog</h2>
       <div class="blog__container flex">
         <div class="blog__cont">
           <div class="blog__cont_img"><img src="image/blog1.jpg" alt=""></div>
@@ -128,27 +134,29 @@
     </section>
 
 
-    <section class="map">
-      <h1 class="sec__ttl">Map</h1>
-      <div class="map__container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.585874356764!2d139.72395791514379!3d35.63793448020445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b041cd2524f%3A0x4e83b433e2d57079!2z55m96YeR5Y-w6aeF!5e0!3m2!1sja!2sjp!4v1647082254617!5m2!1sja!2sjp" width="1346" height="525" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    <section class="map inner" id="map">
+      <h2 class="sec__ttl">Map</h2>
+      <div class="map__container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.585874356764!2d139.72395791514379!3d35.63793448020445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b041cd2524f%3A0x4e83b433e2d57079!2z55m96YeR5Y-w6aeF!5e0!3m2!1sja!2sjp!4v1647082254617!5m2!1sja!2sjp" width="90%" height="525px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
     </section>
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer inner">
     <div class="footer__container flex">
       <div class="footer__cont">
         <p class="footer__cont_lead">白金台の癒しのエステサロン</p>
         <p class="footer__cont_shop">Beautiful Days</p>
       </div>
-      <div class="footer__cont">
-        <nav class="footer__cont_nav ">
-          <ul class="footer__cont_nav_ul flex">
-            <li>Top</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Contact</li>
-            <li>Blog</li>
+      <div class="footer__cont_nav">
+        <nav>
+          <ul>
+            <li><a href="">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
           </ul>
         </nav>
       </div>
@@ -156,7 +164,7 @@
     <p class="footer_small">&copy;Beautiful days</p>
   </footer>
 
-
-</body>
-
-</html>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body></html>
