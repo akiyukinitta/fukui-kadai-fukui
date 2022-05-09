@@ -287,6 +287,14 @@ transform: rotate(-45deg);
   .about__container {
     display: block;
   }
+
+  .about__cont_img img {
+    width: -webkit-fill-available;
+  }
+
+  .about__cont {
+    margin: 0 auto;
+  }
 }
 
 /* menu
@@ -297,7 +305,7 @@ transform: rotate(-45deg);
 
 .menu__cont {
   max-width: 320px;
-  box-shadow: 0px 3px 6px #000;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
   margin: 20px 25px 20px 25px;
 }
 
@@ -385,10 +393,11 @@ transform: rotate(-45deg);
 
 /* map
 ****************************************/
-
+.map {
+  padding-bottom: 145px;
+}
 .map__container {
   text-align: center;
-  padding-bottom: 145px;
 }
 
 .map__container {
