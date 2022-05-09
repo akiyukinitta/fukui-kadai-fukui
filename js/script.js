@@ -11,6 +11,7 @@
   //  スライダー
   $('.slider').slick({
     autoplay: true,
+    centerMode: true,
     autoplaySpeed: 3000,
     speed: 3000,
     dotsClass:'slick-dots',
@@ -24,7 +25,6 @@
         settings:{
           slidesToShow:  1,
           slidesToScroll: 1,
-          centerMode: true,
         }
       }
     ]
