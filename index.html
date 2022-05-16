@@ -54,7 +54,11 @@
 
     <section class="about inner" id="about">
       <div class="about__container flex">
-        <div class="about__cont_img"><img src="image/image1.jpg" alt="白金台にある癒しのプライベート空間">
+        <div class="about__cont_img">
+          <picture>
+            <source srcset="image/about_sp.jpg" media="(max-width: 460px)"/>
+            <img src="image/image1.jpg" alt="白金台にある癒しのプライベート空間">
+          </picture>
         </div>
         <div class="about__cont">
           <h2 class="about__cont_lead">白金台にある<br class="pc_hidden">癒しのプライベート空間</h2>
@@ -71,7 +75,7 @@
       <h2 class="sec__ttl">Menu</h2>
       <div class="menu__container slider">
         <div class="menu__cont">
-          <div class="menu__cont_img"><img src="image/handfoot.jpg" alt="ハンドケア &#047; フットケア"></div>
+          <div class="menu__cont_img"><img src="image/handfoot.jpg" alt="ハンドケア &#047; フットケア" ></div>
           <p>ハンドケア &#047; フットケア</p>
           <p class="menu__cont_price">3&#130;000 yen～</p>
         </div>
@@ -108,7 +112,12 @@
           <p>&#040;営業時間&#058;10&#058;00&#045;20&#058;00&#041;</p>
           <div class="contact__cont_link link"><a href="">お問い合わせ</a></div>
         </div>
-        <div class="contact__cont_img"><img src="image/reservation.jpg" alt="ご予約方法" width="800px"></div>
+        <div class="contact__cont_img">
+          <picture>
+            <source srcset="image/contact_sp.jpg" media="(max-width: 460px)"/>
+            <img src="image/reservation.jpg" alt="ご予約方法" width="800px">
+          </picture>
+          </div>
       </div>
     </section>
 
