@@ -23,7 +23,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   vertical-align: middle;
 }
@@ -248,7 +248,7 @@ transform: rotate(-45deg);
   }
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:480px) {
   .mv {
     background-image: url(/image/mv_sp.jpg);
   }
@@ -303,7 +303,7 @@ transform: rotate(-45deg);
     margin: -147px auto 43px;
   }
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width:480px) {
   
 }
 
@@ -315,13 +315,17 @@ transform: rotate(-45deg);
 
 .menu__cont {
   box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
-  margin: 20px 25px 20px 25px;
+  margin: 20px 10px;
 }
 
+.menu__cont_img {
+  width: 100%;
+  height: auto;
+}
 
 .menu__cont p {
   letter-spacing: 0.1em;
-  padding: 10px 10px 0 10px;
+  padding: 10px 0 0 10px;
 }
 
 .menu__cont_price {

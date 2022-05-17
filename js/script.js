@@ -15,19 +15,26 @@
     autoplaySpeed: 3000,
     speed: 3000,
     dotsClass:'slick-dots',
+    centerPadding: "5%",
+    adaptiveHeight: true,
     dots: true,
     arrows: false,
     //fade: true,
     slidesToShow: 4,
     responsive:[
       {
-        breakpoint: 768,
-        settings:{
-          slidesToShow:  1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
+        breakpoint: 1025, // 480〜767px以下のサイズに適用
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 769, // 〜479px以下のサイズに適用
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
 
